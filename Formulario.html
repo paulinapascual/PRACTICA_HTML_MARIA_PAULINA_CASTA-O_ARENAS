@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script src="JS/codigo.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">LIBROS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="Principal.html">Inicio
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Tablas.html">Tablas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Video.html">Video</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Formulario.html">Formulario</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="imagen"> 
+           <img src="IMG/libros.png">
+         </div>
+     </div>
+     <div class="titulo">
+        <h2><strong>FORMULARIO</strong></h2>
+    </div>
+        <form action="" onsubmit="return validarFormulario()">
+                <div class="form-floating mb-3">
+                    <input type="" class="form-control" id="nombre" placeholder="name" name="nombre">
+                    <label for="floatingInput" ><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre</font></font></label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="" class="form-control" id="direccion" placeholder="" name="direccion">
+                    <label for="floatingInput" ><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dirección</font></font></label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="telefono" placeholder="" name="telefono">
+                    <label for="floatingInput"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Telefono</font></font></label>
+                  </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com" name="correo">
+                  <label for="floatingInput"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Correo electrónico</font></font></label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="" class="form-control" id="ciudad" placeholder="" name="ciudad">
+                    <label for="floatingInput" ><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ciudad</font></font></label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="edad" placeholder="" name="edad">
+                    <label for="floatingInput"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Edad</font></font></label>
+                  </div>
+                  <button type="submit" class="btn btn-warning"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Enviar</font></font></button>
+        </form>   
+    <br>
+    <div id="piepagina">
+      <p>Derechos reservados Alumnos 2024- Contacto : paulina@prueba.com</p>
+    </div> 
+</body>
+</html>
