@@ -1,0 +1,98 @@
+/* General */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #fffde8;
+}
+
+/* Contenedor principal sin margen lateral */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Contenido izquierdo sin margen */
+div.content1 {
+    flex: 1 1 30%;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Contenido derecho sin margen */
+div.content2 {
+    flex: 1 1 68%;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Imagen responsiva */
+div.imagen {
+    width: 100%;
+    height: auto;
+}
+
+/* Pie de página */
+div#piepagina {
+    width: 100%;
+    background: #d4c85b;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    div.content1, div.content2 {
+        flex: 1 1 100%; /* Se ajustan al 100% del ancho en pantallas pequeñas */
+    }
+
+    div#piepagina {
+        font-size: 14px;
+    }
+}
+div.titulo{
+    display: flex;
+    justify-content: center;  /* Centrar horizontalmente */
+    align-items: center;      /* Centrar verticalmente */
+    height: 50px;            /* Altura del 100% de la ventana */
+    margin: 0;
+    
+}
+h2{
+    display: flex;
+    justify-content: center;  /* Centrar horizontalmente */
+    align-items: center; 
+    color: #000000;
+    font-size: 22px;          /* Tamaño del texto */
+    text-align: center;  
+}
+/* Contenedor para centrar el video */
+.video-wrapper {
+    display: flex;
+    justify-content: center;  /* Centrar el video horizontalmente */
+    align-items: center;      /* (Opcional) Si se quiere centrar verticalmente en su contenedor */
+    width: 100%;              /* El ancho completo de la pantalla */
+    height: auto;             /* Altura automática, ajustada al contenido */
+    padding: 20px;            /* Espacio alrededor del video */
+}
+
+/* Video centrado y con un tamaño controlado */
+.video-wrapper iframe {
+    width: 50%;               /* Ocupa el 50% del ancho de la pantalla */
+    height: auto;             /* Mantiene la relación de aspecto del video */
+}
+form{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
